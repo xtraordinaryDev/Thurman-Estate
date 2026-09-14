@@ -15,7 +15,8 @@
 <header class="nav">
   <div class="wrap">
     <a class="wordmark" href="index.html">The Thurman <span>Place</span></a>
-    <nav aria-label="Chapters">
+    <button type="button" class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="chapters" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav aria-label="Chapters" id="chapters">
       <ul>
         <li><a href="index.html#land">The Land</a></li>
         <li><a href="index.html#pond">The Pond</a></li>
@@ -68,6 +69,7 @@
   <div class="viewer__bar"><span id="viewer-pos"></span><span id="viewer-cap"></span></div>
 </div>
 
+<script src="nav.js"></script>
 <script src="gallery.js"></script>
 </body>
 </html>
