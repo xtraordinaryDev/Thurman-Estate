@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Every photo and video from the Thurman Place in Magee, Mississippi: the pond, the house, the people, and the land.">
+<title>The Thurman Place · Gallery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="gallery-page">
+
+<header class="nav">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">The Thurman <span>Place</span></a>
+    <nav aria-label="Chapters">
+      <ul>
+        <li><a href="index.html#land">The Land</a></li>
+        <li><a href="index.html#pond">The Pond</a></li>
+        <li><a href="index.html#house">The House</a></li>
+        <li><a href="index.html#hands">The Hands</a></li>
+        <li><a href="index.html#eldridge">Eldridge</a></li>
+        <li><a href="index.html#memories">Memories</a></li>
+        <li><a href="gallery.html" aria-current="true">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="chapter gallery">
+    <div class="wrap">
+      <div class="chapter__head">
+        <p class="eyebrow">Everything, in order</p>
+        <h2>The Gallery</h2>
+        <p class="lede">Every photo and clip from the land, 2022 to now. Tap one to see it full size. Swipe or use the arrow keys to move through.</p>
+      </div>
+      <div class="filters" aria-label="Show">
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="photo" aria-pressed="false">Photos</button>
+        <button type="button" data-filter="video" aria-pressed="false">Videos</button>
+        <span class="filters__sep" aria-hidden="true"></span>
+        <button type="button" data-filter="pond" aria-pressed="false">The Pond</button>
+        <button type="button" data-filter="house" aria-pressed="false">The House</button>
+        <button type="button" data-filter="people" aria-pressed="false">The People</button>
+        <button type="button" data-filter="land" aria-pressed="false">The Land</button>
+        <span class="filters__count" id="count" aria-live="polite"></span>
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p class="big">For Eldridge.<br><span>From all of us.</span></p>
+    <p class="cap">In memory of Eldridge Lee Thurman &middot; The Thurman Place, Magee, Mississippi &middot; <a href="index.html">Back to the story</a></p>
+  </div>
+</footer>
+
+<div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-label="Photo and video viewer" hidden>
+  <button type="button" class="viewer__close" aria-label="Close">&times;</button>
+  <button type="button" class="viewer__prev" aria-label="Previous">&#8249;</button>
+  <div class="viewer__stage" id="viewer-stage"></div>
+  <button type="button" class="viewer__next" aria-label="Next">&#8250;</button>
+  <div class="viewer__bar"><span id="viewer-pos"></span><span id="viewer-cap"></span></div>
+</div>
+
+<script src="gallery.js"></script>
+</body>
+</html>

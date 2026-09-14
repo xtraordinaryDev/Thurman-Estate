@@ -1,0 +1,3 @@
+# Original camera files stay local (about 830 MB); the web-ready copies live in site/
+Assets/
+.DS_Store
